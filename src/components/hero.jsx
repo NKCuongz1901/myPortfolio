@@ -1,7 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import ShinyEffect from "./shinyEffect";
+import avatarPic from "../assets/img/avt.jpg";
 import { AiOutlineFacebook, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { DiCss3, DiHtml5, DiNodejs } from "react-icons/di";
+import { FaReact, FaSass } from "react-icons/fa";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
 const Hero = () => {
     return (
         <div className="mt-24 max-w-[1200px] mx-auto relative ">
@@ -15,7 +20,7 @@ const Hero = () => {
                     <TypeAnimation
                         sequence={[
                             'Frontend Developer', 1000,
-                            'FullStack Developer', 1000
+                            'Backend Developer', 1000
                         ]}
                         speed={50}
                         repeat={Infinity}
@@ -58,14 +63,41 @@ const Hero = () => {
                             <motion.a href="https://github.com/NKCuongz1901" target="_blank" whileHover={{ scale: 1.25 }} >
                                 <AiOutlineGithub />
                             </motion.a>
-                            <motion.a href="#" whileHover={{ scale: 1.25 }} ><AiOutlineFacebook /></motion.a>
+                            <motion.a href="https://www.facebook.com/nkcuong1901/" target="_blank" whileHover={{ scale: 1.25 }} ><AiOutlineFacebook /></motion.a>
                             <motion.a href="#" whileHover={{ scale: 1.25 }}  ><AiOutlineLinkedin /></motion.a>
                         </div>
                     </motion.div>
                 </motion.div>
-                <motion.div>
-                    <img src="" alt="" />
-                </motion.div>
+                <motion.img
+                    initial={{ opacity: 0.8, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    src={avatarPic}
+                    className="w-[300px] md:w-[350px]"
+                />
+
+            </div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 2 }}
+                className="flex flex-row text-7xl  items-center justify-center px-12 md:px-0 w-full py-24 z-10"
+            >
+                <p className="text-gray-400 mr-6">My Tech Stack</p>
+                <DiHtml5 className="text-orange-500 mx-2" />
+                <DiCss3 className="text-blue-500 mx-2" />
+                <FaReact className="text-blue-500 mx-2" />
+                <DiNodejs className="text-green-500 mx-2" />
+                <RiTailwindCssFill className="text-blue-500 mx-2" />
+                <FaSass className="text-pink-600 mx-2" />
+                <RiJavascriptFill className="text-yellow-500 mx-2" />
+                <SiTypescript className="text-blue-600 mx-2" />
+            </motion.div>
+
+            <div className="absolute inset-0 hidden md:block z-0 pointer-events-none">
+                <ShinyEffect left={0} top={0} size={1200} />
             </div>
         </div>
     )
