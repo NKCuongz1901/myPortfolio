@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 place-items-center">
                 <div className="text-gray-200 my-3">
                     <h2 className="text-4xl font-semibold mb-5">About <span>me</span></h2>
-                    <p className="text-justify leading-7 mx-auto w-11/12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem magnam ipsa pariatur rerum. Architecto et deleniti repudiandae eveniet laborum eius pariatur facilis? Qui vitae facere dignissimos commodi voluptas incidunt laudantium!</p>
+                    <p className="text-justify leading-7 mx-auto w-11/12">I am a passionate software engineer from Vietnam with a strong desire to excel in the field of software development. I continuously strive to enhance my skills and broaden my knowledge to become a highly competent engineer. I am excited about the opportunity to collaborate with talented professionals and contribute to impactful projects. I look forward to working with you and achieving great things together</p>
                 </div>
                 <form
                     action="https://getform.io/f/ayvvzdpb"

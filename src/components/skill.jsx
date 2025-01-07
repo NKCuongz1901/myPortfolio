@@ -54,13 +54,13 @@ const Skill = () => {
         <div className="flex flex-col justify-center px-4 text-gray-200 pb-8 md:py-12 max-w-[650px] mx-auto" id="skill">
             <Reveal>
                 <h2 className="font-bold text-gray-200 text-center text-3xl mb-4">Skills</h2>
-                <p className="text-center mb-8">This is some of my personal project i had done. <a href="#portfolio">Lets check them</a></p>
+                <p className="text-center mb-8">This is some of my personal project i had done. <a href="#portfolio" className="text-purple-400">Lets check them</a></p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {skills.map((skill, index) => (
                         <div
                             key={index}
-                            className="border border-purple-900 p-6 rounded-lg bg-purple-900/20 shadow-lg"
+                            className="border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] backdrop-blur-[12px] "
                         >
                             <h3 className="text-xl font-bold mb-4 text-center">{skill.category}</h3>
                             <div className="grid grid-cols-2 gap-4">
@@ -73,6 +73,7 @@ const Skill = () => {
                             </div>
                         </div>
                     ))}
+
                 </div>
 
             </Reveal>
