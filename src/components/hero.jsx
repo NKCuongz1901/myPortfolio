@@ -6,6 +6,7 @@ import { AiOutlineFacebook, AiOutlineGithub, AiOutlineLinkedin } from "react-ico
 import { DiCss3, DiHtml5, DiNodejs } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
+import cvFile from "../assets/resource/CV Nguyen Khac Cuong.pdf";
 const Hero = () => {
     return (
         <div className="mt-24 max-w-[1200px] mx-auto relative ">
@@ -56,7 +57,9 @@ const Hero = () => {
                             className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
                                      border-purple-400 rounded-xl"
                         >
-                            Download CV
+                            <a href={cvFile} download="CV Nguyen Khac Cuong.pdf">
+                                Download CV
+                            </a>
                         </motion.button>
                         <div className="flex flex-row items-center gap-4 md:text-6xl text-purple-400">
                             <motion.a href="https://github.com/NKCuongz1901" target="_blank" whileHover={{ scale: 1.25 }} >
