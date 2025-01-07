@@ -4,9 +4,8 @@ import ShinyEffect from "./shinyEffect";
 import avatarPic from "../assets/img/avt.jpg";
 import { AiOutlineFacebook, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { DiCss3, DiHtml5, DiNodejs } from "react-icons/di";
-import { FaReact, FaSass } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
 const Hero = () => {
     return (
         <div className="mt-24 max-w-[1200px] mx-auto relative ">
@@ -85,15 +84,12 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 2 }}
                 className="flex flex-row text-7xl  items-center justify-center px-12 md:px-0 w-full py-24 z-10"
             >
-                <p className="text-gray-400 mr-6">My Tech Stack</p>
+                <p className="text-gray-400 mr-6">My Portfolio Stack</p>
                 <DiHtml5 className="text-orange-500 mx-2" />
                 <DiCss3 className="text-blue-500 mx-2" />
                 <FaReact className="text-blue-500 mx-2" />
-                <DiNodejs className="text-green-500 mx-2" />
                 <RiTailwindCssFill className="text-blue-500 mx-2" />
-                <FaSass className="text-pink-600 mx-2" />
                 <RiJavascriptFill className="text-yellow-500 mx-2" />
-                <SiTypescript className="text-blue-600 mx-2" />
             </motion.div>
 
             <div className="absolute inset-0 hidden md:block z-0 pointer-events-none">
