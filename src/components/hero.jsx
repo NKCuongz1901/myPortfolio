@@ -74,7 +74,7 @@ const Hero = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
                     src={avatarPic}
-                    className="w-[300px] md:w-[350px]"
+                    className="w-[300px] md:w-[350px] rounded-2xl"
                 />
 
             </div>
